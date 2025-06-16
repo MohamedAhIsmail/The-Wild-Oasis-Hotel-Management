@@ -1,6 +1,6 @@
 import { createClient } from "@supabase/supabase-js";
 
-const supabaseUrl = "https://wbedqfotipczlixysdgy.supabase.co";
+export const supabaseUrl = "https://wbedqfotipczlixysdgy.supabase.co";
 
 //RSL is enabled so you can use the api key here => do not worry
 const supabaseKey =
