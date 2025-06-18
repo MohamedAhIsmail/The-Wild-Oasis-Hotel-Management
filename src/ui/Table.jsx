@@ -69,9 +69,7 @@ function Table({ columns, children }) {
         columns,
       }}
     >
-      <StyledTable role="table" as="table">
-        {children}
-      </StyledTable>
+      <StyledTable role="table">{children}</StyledTable>
     </TableContext.Provider>
   );
 }
@@ -79,7 +77,7 @@ function Table({ columns, children }) {
 function Header({ children }) {
   const { columns } = useContext(TableContext);
   return (
-    <StyledHeader role="row" columns={columns} as="header">
+    <StyledHeader role="row" columns={columns}>
       {children}
     </StyledHeader>
   );
