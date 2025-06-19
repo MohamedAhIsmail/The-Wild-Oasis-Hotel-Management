@@ -11,13 +11,14 @@ export function useBookings() {
     !filterValue || filterValue === "all"
       ? null
       : { field: "status", value: filterValue };
+      // : { field: "totalPrice", value: 5000, method: "gte" };
 
   const {
     data: bookings,
     error,
     isLoading,
   } = useQuery({
-    queryKey: ["bookings", filterValue],
+    queryKey: ["bookings", filter],
     queryFn: () => getBookings({ filter }),
   });
 

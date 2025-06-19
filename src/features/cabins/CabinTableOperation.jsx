@@ -6,7 +6,7 @@ function CabinTableOperation() {
   return (
     <TableOperations>
       <Filter
-        filterFeild="discount"
+        filterField="discount"
         options={[
           { value: "all", label: "All" },
           { value: "no-discount", label: "No discount" },
@@ -20,8 +20,14 @@ function CabinTableOperation() {
           { value: "name-desc", label: "Sort by name (Z-A)" },
           { value: "regularPrice-asc", label: "Sort by price (low first)" },
           { value: "regularPrice-desc", label: "Sort by price (high first)" },
-          { value: "maxCapacity-asc", label: "Sort by Max capacity (low first)" },
-          { value: "maxCapacity-desc", label: "Sort by Max capacity (high first)" },
+          {
+            value: "maxCapacity-asc",
+            label: "Sort by Max capacity (low first)",
+          },
+          {
+            value: "maxCapacity-desc",
+            label: "Sort by Max capacity (high first)",
+          },
         ]}
       />
     </TableOperations>
