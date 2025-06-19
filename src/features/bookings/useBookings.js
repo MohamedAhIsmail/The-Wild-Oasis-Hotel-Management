@@ -11,15 +11,23 @@ export function useBookings() {
     !filterValue || filterValue === "all"
       ? null
       : { field: "status", value: filterValue };
-      // : { field: "totalPrice", value: 5000, method: "gte" };
+  // : { field: "totalPrice", value: 5000, method: "gte" };
+
+  //Sort
+
+  const sortByRow = searchParams.get("sortBy") || "startDate-desc";
+
+  const [field, direction] = sortByRow.split("-");
+
+  const sortBy = { field, direction };
 
   const {
     data: bookings,
     error,
     isLoading,
   } = useQuery({
-    queryKey: ["bookings", filter],
-    queryFn: () => getBookings({ filter }),
+    queryKey: ["bookings", filter, sortBy],
+    queryFn: () => getBookings({ filter, sortBy }),
   });
 
   return { bookings, error, isLoading };
