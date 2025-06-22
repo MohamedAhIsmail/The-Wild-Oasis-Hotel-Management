@@ -28,6 +28,7 @@ function BookingDetail() {
   const moveBack = useMoveBack();
   
   if (isLoading) return <Spinner />;
+  if (!booking) return <p>Booking not found</p>
   const { status, id } = booking;
 
   const statusToTagName = {
