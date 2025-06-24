@@ -1,7 +1,7 @@
 import { useMutation } from "@tanstack/react-query";
 import { login as loginApi } from "../../services/apiAuth";
 import toast from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
+import { replace, useNavigate } from "react-router-dom";
 
 export function useLogin() {
   const navigate = useNavigate();
@@ -10,7 +10,7 @@ export function useLogin() {
     mutationFn: ({ email, password }) => loginApi({ email, password }),
     onSuccess: (user) => {
       toast.success("Login in Successfully");
-      navigate("/");
+      navigate("/", { replace: true });
     },
     onError: (error) => {
       console.log("Error", error);
