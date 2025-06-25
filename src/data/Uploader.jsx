@@ -30,10 +30,16 @@ async function deleteBookings() {
   if (error) console.log(error.message);
 }
 
+// deleteBookings()
+
 async function createGuests() {
   const { error } = await supabase.from("guests").insert(guests);
   if (error) console.log(error.message);
+  console.log("guests data:", guests);
+
 }
+
+// createGuests()
 
 async function createCabins() {
   const { error } = await supabase.from("cabins").insert(cabins);
