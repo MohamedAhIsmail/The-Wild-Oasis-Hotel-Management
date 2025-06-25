@@ -1,3 +1,4 @@
+import { format } from "date-fns";
 import { PAGE_SIZE } from "../utils/constants";
 import { getToday } from "../utils/helpers";
 import supabase from "./supabase";
@@ -106,6 +107,7 @@ export async function getStaysTodayActivity() {
   }
   return data;
 }
+
 
 export async function updateBooking(id, obj) {
   const { data, error } = await supabase
