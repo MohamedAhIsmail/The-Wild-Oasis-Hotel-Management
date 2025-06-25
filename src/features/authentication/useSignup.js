@@ -12,7 +12,7 @@ export function useSignup() {
       );
     },
     onError: (error) => {
-      toast.error(`${error}`);
+      toast.error(`${error.message}`);
     },
   });
 
