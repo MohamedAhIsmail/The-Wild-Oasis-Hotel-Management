@@ -10,7 +10,7 @@ function CheckoutButton({ bookingId }) {
       onClick={() => checkout(bookingId)}
       disabled={isCheckingOut}
     >
-      Check out #{bookingId}
+      Check out
     </Button>
   );
 }
