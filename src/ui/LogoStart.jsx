@@ -8,22 +8,17 @@ const StyledLogo = styled.div`
 const Img = styled.img`
   height: 9.6rem;
   width: auto;
-
-  @media (max-width: 850px) {
-    width: 100%;
-    height: auto
-  }
 `;
 
-function Logo() {
+function LogoStart() {
   const { isDarkMode } = useDarkMode();
 
   const src = isDarkMode ? "/logo-dark.png" : "/logo-light.png";
   return (
     <StyledLogo>
-      <Img src={src} alt="Logo"/>
+      <Img src={src} alt="Logo" />
     </StyledLogo>
   );
 }
 
-export default Logo;
+export default LogoStart;
