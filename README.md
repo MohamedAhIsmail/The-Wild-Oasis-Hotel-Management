@@ -1,6 +1,7 @@
 # React + Vite
 
 About
+
 Booking Management System (Internal hotel management system) built with React and Supabase. It allows administrators to add rooms, confirm and manage check-ins and check-outs, and add users to efficiently manage the system.
 
 
