@@ -1,13 +1,45 @@
-# React + Vite
+# Hotel Booking Management System
 
-About
+A back-office hotel booking management system built with React and Supabase. This system is designed for hotel staff to easily manage rooms, bookings, and system settings with a clean, modern interface.
 
-Booking Management System (Internal hotel management system) built with React and Supabase. It allows administrators to add rooms, confirm and manage check-ins and check-outs, and add users to efficiently manage the system.
+## 🚀 Features
 
+- **Room Management**  
+  - Add, edit, and delete rooms  
+  - Duplicate room data to quickly add similar rooms  
+  - Define room price, number of guests, room number, description, discount, and upload photos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- **Booking Management**  
+  - Confirm bookings  
+  - Check-in and check-out functionality  
+  - View and manage booking details  
+  - Cancel bookings  
+  - Professional filters to search and sort bookings and rooms
 
-Currently, two official plugins are available:
+- **System Settings**  
+  - Configure system-wide settings, such as:
+    - Minimum nights per booking
+    - Maximum nights per booking
+    - Maximum guests per booking
+    - Breakfast price
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **User Management**  
+  - Add new system users (only by current authorized users)
+  - Update current user profile (name, avatar, password)
+  - Login page for user authentication
+
+- **Dashboard**  
+  - View hotel statistics and insights with charts and reports
+
+- **Other Features**  
+  - Supports Dark Mode  
+  - Feature-based folder architecture for better scalability  
+  - Modern UX/UI
+
+## 📸 Screenshots
+
+> *(You can add screenshots here later by uploading images to the repo and linking them)*
+
+```markdown
+![dashboard](./assets/dashboard.png)
+![room-management](./assets/rooms.png)
