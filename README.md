@@ -2,6 +2,12 @@
 
 A back-office hotel booking management system built with React and Supabase. This system is designed for hotel staff to easily manage rooms, bookings, and system settings with a clean, modern interface.
 
+## 📸 Screenshots
+
+![dashboard dark mode](docs/1.png)
+![dashboard dark mode](docs/2.png)
+
+
 ## 🚀 Features
 
 - **Room Management**  
@@ -36,11 +42,19 @@ A back-office hotel booking management system built with React and Supabase. Thi
   - Feature-based folder architecture for better scalability  
   - Modern UX/UI
 
-## 📸 Screenshots
+## 🛠 Tech Stack
 
-> *(You can add screenshots here later by uploading images to the repo and linking them)*
+- React 18 + Vite
+- React Router DOM
+- React Query
+- React Hook Form
+- React Hot Toast
+- React Icons
+- Styled Components
+- Recharts
+- Backend: Supabase
 
-## Project Structure
+## 🗂 Project Structure
 
 ```
 the-wild-oasis/
@@ -71,3 +85,20 @@ the-wild-oasis/
 ├── vite.config.js
 └── ...
 ```
+
+## ⚙️ Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/MohamedAhIsmail/The-Wild-Oasis-Hotel-Management.git
+
+2. **Install dependencies**
+   
+   ```bash
+   npm install
+   
+3. **Run the app**
+   
+   ```bash
+   npm run dev
