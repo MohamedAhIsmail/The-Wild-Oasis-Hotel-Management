@@ -51,23 +51,23 @@ the-wild-oasis/
 ├── docs/
 ├── public/
 ├── src/
-    ├── context/
-│   ├── features/
-│   │   ├── authentication/
-│   │   ├── bookings/
-│   │   ├── cabins/
-│   │   ├── check-in-out/
-│   │   ├── dashboard/
-│   │   └── settings/
-│   ├── hooks/
-│   ├── pages/
-│   ├── services/
-│   ├── styles/
-│   ├── ui/
-│   ├── utils/
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
+│ ├── context/
+│ ├── features/
+│ │ ├── authentication/
+│ │ ├── bookings/
+│ │ ├── cabins/
+│ │ ├── check-in-out/
+│ │ ├── dashboard/
+│ │ └── settings/
+│ ├── hooks/
+│ ├── pages/
+│ ├── services/
+│ ├── styles/
+│ ├── ui/
+│ ├── utils/
+│ ├── App.jsx
+│ ├── main.jsx
+│ └── index.css
 ├── .gitignore
 ├── index.html
 ├── package.json
