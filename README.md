@@ -41,5 +41,5 @@ A back-office hotel booking management system built with React and Supabase. Thi
 > *(You can add screenshots here later by uploading images to the repo and linking them)*
 
 ```markdown
-![dashboard](./assets/dashboard.png)
+![dashboard](./docs/1.png)
 ![room-management](./assets/rooms.png)
